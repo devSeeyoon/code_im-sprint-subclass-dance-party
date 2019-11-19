@@ -38,12 +38,13 @@
 1. 현재 repo를 자신의 Github으로 fork 합니다.
 2. fork된 repo를 git clone 명령어로 자신의 local 환경으로 다운로드합니다.
 3. Ternimal에 `npm install`을 입력해 dependency들을 설치합니다.
-4. Leanco에서 Pair Programming 전에 혼자서 진행할 부분을 확인합니다.
-5. Pair분과 함께 Programming을 하며 재밌게 coding합니다.
+4. `npm install` 이후에 `npm audit fix` 여부를 반드시 확인합니다.
+5. UrClass에서 Pair Programming 전에 혼자서 진행할 부분을 확인합니다.
+6. Pair분과 함께 Programming을 하며 재밌게 coding합니다.
 
 ## 제출 방법
 
 1. student.json 파일에 필요한 정보를 입력합니다.
-2. REVIEW.md 파일에 이번 Sprint를 마무리하며 review를 작성합니다.
+2. `npm run test` 를 실행시켜 테스트 결과를 업데이트 합니다.
 3. `npm run submit`을 실행시켜 sprint를 제출합니다.
 4. 자신의 github(remote) repo에 push합니다.
