@@ -19,6 +19,10 @@ class DancerClass {
 		// this.step2();
 		this.setPosition(top, left);
 		this.gone();
+
+		//정렬에 필요한 배열
+		this.sortArr = [];
+		this.sort();
 	}
 
 	step() {
@@ -39,11 +43,22 @@ class DancerClass {
 	gone() {
 		let target = this.$node;
 		target.onclick = function() {
-			target.style.animation = "bigger 1s linear 1 forwards";
+			target.style.animation = 'bigger 1s linear 1 forwards';
 			Object.assign(target.style, {
-				top: `${(Math.random()+ 0.5 )* 100}px`,
-				left: `${(Math.random()+ 0.5) * 100}px`
-			})
+				top: `${(Math.random() + 0.5) * 100}px`,
+				left: `${(Math.random() + 0.5) * 100}px`,
+			});
+		};
+	}
+
+	// 정렬을 합시다
+	sort() {
+		//각 클래스들을 배열에 담아서
+		let target = document.querySelectorAll('span');
+		for (let i = 0; i < target.length; i++) {
+			if (target[i].className === this.$node.className) {
+				this.sortArr.push(target[i]);
+			}
 		}
 	}
 }

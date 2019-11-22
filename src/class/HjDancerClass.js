@@ -21,7 +21,18 @@ class HjDancerClass extends TwinkleDancerClass {
 			this.count2 = this.count2 - 1;
 		}
 	}
+	//정렬메소드3
+	sort() {
+		let target = document.querySelectorAll('span');
+		for (let i = 0; i < target.length; i++) {
+			if (target[i].className.includes('Hj')) {
+				this.sortArr.push(target[i]);
+			}
+		}
+	}
 }
+
+//HJ가
 
 // you don't have to worry about this code. this is for testing.
 if (typeof window === 'undefined') {

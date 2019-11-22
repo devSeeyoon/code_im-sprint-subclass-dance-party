@@ -84,18 +84,8 @@
 	position: absolute;
 }
 
-/* span[On] :hover {
-	-webkit-transform: scale(2.5);
-	-moz-transform: scale(2.5);
-	-ms-transform: scale(2.5);
-	-o-transform: scale(2.5);
-	transform: scale(2.5);
-	-webkit-transition: 0.3s;
-	-moz-transition: 0.3s;
-	-ms-transition: 0.3s;
-	-o-transition: 0.3s;
-	transition: 0.3s;
+/* 배열 위치 정렬 */
+.arr {
+	position: absolute;
+	top: 50%;
 }
-
-.Dancer.hjDancer.Off {
-} */
