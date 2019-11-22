@@ -13,9 +13,9 @@ function BlinkyDancer (/*top, left, timeBetweenSteps*/) {
 BlinkyDancer.prototype = Object.create(Dancer.prototype);
 BlinkyDancer.prototype.constructor = BlinkyDancer;
 
-let oldStep = new BlinkyDancer().step;
 
 BlinkyDancer.prototype.step = function () {
+  let oldStep = this.step();
   oldStep();
 
   let style = this.$node.style;
