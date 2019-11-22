@@ -12,14 +12,21 @@ class DancerClass {
 		this.$node = createDancerElement();
 		this.timeBetweenSteps = timeBetweenSteps;
 		this.count = 0;
-        this.arr = ["Red", "Orangered", "Yellow", "Green", "Blue", "Navy", "Indigo"]; // 순서.....
+		this.arr = ['Red', 'Orangered', 'Yellow', 'Green', 'Blue', 'Navy', 'Indigo']; // 순서.....
+		this.count2 = 0;
+		this.switArr = ['On', 'Off'];
 		this.step();
+		// this.step2();
 		this.setPosition(top, left);
 		this.gone();
 	}
 
 	step() {
 		setTimeout(this.step.bind(this), this.timeBetweenSteps);
+	}
+
+	step2() {
+		setTimeout(this.step2.bind(this), this.timeBetweenSteps);
 	}
 
 	setPosition(top, left) {

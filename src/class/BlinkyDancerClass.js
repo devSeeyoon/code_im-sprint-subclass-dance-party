@@ -8,7 +8,7 @@ if (typeof window === 'undefined') {
 class BlinkyDancerClass extends DancerClass {
 	// 슈퍼로 받는다
 	constructor(top, left, timeBetweenSteps) {
-      super(top, left, timeBetweenSteps)
+		super(top, left, timeBetweenSteps);
 	}
 
 	// 메소드를 재정의

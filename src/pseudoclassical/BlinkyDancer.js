@@ -24,6 +24,10 @@ BlinkyDancer.prototype.setPosition = function() {
 	Dancer.prototype.setPostion.call(this)
 };
 
+BlinkyDancer.prototype.setPosition = function() {
+	Dancer.prototype.setPostion.call(this);
+};
+
 // you don't have to worry about this code. this is for testing.
 if (typeof window === 'undefined') {
 	module.exports = BlinkyDancer;
