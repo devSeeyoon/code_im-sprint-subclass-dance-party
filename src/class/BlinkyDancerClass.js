@@ -17,6 +17,10 @@ class BlinkyDancerClass extends DancerClass {
 		let style = this.$node.style;
 		style.display = style.display === 'none' ? 'inline-block' : 'none';
 	}
+
+	gone() {
+		super.gone()
+	}
 }
 
 // you don't have to worry about this code. this is for testing.

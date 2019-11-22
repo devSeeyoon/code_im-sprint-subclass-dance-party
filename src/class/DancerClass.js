@@ -15,6 +15,7 @@ class DancerClass {
         this.arr = ["Red", "Orangered", "Yellow", "Green", "Blue", "Navy", "Indigo"]; // 순서.....
 		this.step();
 		this.setPosition(top, left);
+		this.gone();
 	}
 
 	step() {
@@ -28,7 +29,16 @@ class DancerClass {
 		});
 	}
 
-	// 일렬로 세우는 메소드를 만들어서 // position x축 ~~~
+	gone() {
+		let target = this.$node;
+		target.onclick = function() {
+			target.style.animation = "bigger 1s linear 1 forwards";
+			Object.assign(target.style, {
+				top: `${(Math.random()+ 0.5 )* 100}px`,
+				left: `${(Math.random()+ 0.5) * 100}px`
+			})
+		}
+	}
 }
 
 const createDancerElement = () => {

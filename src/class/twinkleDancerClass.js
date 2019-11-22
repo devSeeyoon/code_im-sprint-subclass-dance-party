@@ -13,13 +13,15 @@ class TwinkleDancerClass extends DancerClass {
 
   step() {
     super.step();
-    
     let color = this.arr[this.count];
     this.$node.className = `twinkle${color}`
     this.count = this.count +1;
     if (this.count === 7) {
         this.count = 0;
     }
+  }
+  gone() {
+    super.gone();
   }
 }
 

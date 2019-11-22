@@ -67,3 +67,14 @@ body, a:link, a:visited, a:active{
   border-radius:10px;
   position:absolute;
 }
+
+@keyframes bigger {
+  from {
+    transform: none;
+  }
+  to {
+    transform: scale(4.0);
+  }
+}
+
+
