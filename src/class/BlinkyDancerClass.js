@@ -7,7 +7,9 @@ if (typeof window === 'undefined') {
 // 여기에는 Pseudoclassical에서 정의된 BlinkyDancer와 이름이 겹치므로, BlinkyDancerClass라는 이름을 사용합니다.
 class BlinkyDancerClass extends DancerClass {
 	// 슈퍼로 받는다
-	super() {}
+	constructor(top, left, timeBetweenSteps) {
+		super(top, left, timeBetweenSteps);
+	}
 
 	// 메소드를 재정의
 	step() {

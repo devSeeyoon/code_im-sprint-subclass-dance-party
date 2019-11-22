@@ -8,8 +8,8 @@
   },
   "scripts": {
     "test": "npm-run-all -s -c --silent run-test report-test",
-    "run-test" : "mocha spec/test.js",
-    "report-test" : "mocha spec/test.js --reporter reporter.js",
+    "run-test": "mocha spec/test.js",
+    "report-test": "mocha spec/test.js --reporter reporter.js",
     "precommit": "lint-staged",
     "lint": "eslint src",
     "pre-test": "node __test__/preTest.js",
