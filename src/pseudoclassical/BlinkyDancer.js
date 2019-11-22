@@ -12,12 +12,16 @@ function BlinkyDancer(top, left, timeBetweenSteps) {
 BlinkyDancer.prototype = Object.create(Dancer.prototype);
 BlinkyDancer.prototype.constructor = BlinkyDancer;
 
-BlinkyDancer.prototype.step = function() {
+BlinkyDancer.prototype.step = function() {  
 	// 상속(setTimeout)받은 함수 + style 적용
-	Dancer.prototype.step.call(this);
+	Dancer.prototype.step.call(this);  
 
 	let style = this.$node.style;
-	style.display = style.display === 'none' ? 'inline-block' : 'none';
+	style.display = style.display === 'none' ? 'inline-block' : 'none'; // 폴리모피즘!! -> 알파
+};
+
+BlinkyDancer.prototype.setPosition = function() {
+	Dancer.prototype.setPostion.call(this)
 };
 
 BlinkyDancer.prototype.setPosition = function() {
@@ -28,3 +32,4 @@ BlinkyDancer.prototype.setPosition = function() {
 if (typeof window === 'undefined') {
 	module.exports = BlinkyDancer;
 }
+

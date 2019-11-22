@@ -25,3 +25,45 @@ body, a:link, a:visited, a:active{
   border-radius:10px;
   position:absolute;
 }
+
+.twinkleRed {
+  border:10px solid red;
+  border-radius:10px;
+  position:absolute;
+}
+
+.twinkleBlue {
+  border:10px solid blue;
+  border-radius:10px;
+  position:absolute;
+}
+
+.twinkleOrangered {
+  border:10px solid orange;
+  border-radius:10px;
+  position:absolute;
+}
+
+.twinkleGreen {
+  border:10px solid green;
+  border-radius:10px;
+  position:absolute;
+}
+
+.twinkleYellow {
+  border:10px solid yellow;
+  border-radius:10px;
+  position:absolute;
+}
+
+.twinkleNavy {
+  border:10px solid midnightblue;
+  border-radius:10px;
+  position:absolute;
+}
+
+.twinkleIndigo {
+  border:10px solid purple;
+  border-radius:10px;
+  position:absolute;
+}

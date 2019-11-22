@@ -11,18 +11,31 @@ class DancerClass {
 	constructor(top, left, timeBetweenSteps) {
 		this.$node = createDancerElement();
 		this.timeBetweenSteps = timeBetweenSteps;
+		this.count = 0;
+		this.arr = ['Red', 'Orangered', 'Yellow', 'Green', 'Blue', 'Navy', 'Indigo']; // 순서.....
+		this.count2 = 0;
+		this.switArr = ['On', 'Off'];
 		this.step();
+		// this.step2();
 		this.setPosition(top, left);
 	}
+
 	step() {
 		setTimeout(this.step.bind(this), this.timeBetweenSteps);
 	}
+
+	step2() {
+		setTimeout(this.step2.bind(this), this.timeBetweenSteps);
+	}
+
 	setPosition(top, left) {
 		Object.assign(this.$node.style, {
 			top: `${top}px`,
 			left: `${left}px`,
 		});
 	}
+
+	// 일렬로 세우는 메소드를 만들어서 // position x축 ~~~
 }
 
 const createDancerElement = () => {

@@ -14,6 +14,12 @@ function Dancer(top, left, timeBetweenSteps) {
 	this.setPostion(top, left);
 }
 
+const createDancerElement = () => {
+  let elDancer = document.createElement('span');
+  elDancer.className = 'dancer';
+  return elDancer;
+};
+
 //메소드 생성
 Dancer.prototype.step = function() {
 	setTimeout(this.step.bind(this), this.timeBetweenSteps);
@@ -26,11 +32,6 @@ Dancer.prototype.setPostion = function(top, left) {
 	});
 };
 
-const createDancerElement = () => {
-	let elDancer = document.createElement('span');
-	elDancer.className = 'dancer';
-	return elDancer;
-};
 
 // you don't have to worry about this code. this is for testing.
 if (typeof window === 'undefined') {
