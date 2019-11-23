@@ -21,6 +21,14 @@ class BlinkyDancerClass extends DancerClass {
 	gone() {
 		super.gone()
 	}
+
+	arrPush() {
+		super.arrPush()
+	}
+
+	sort(order) {
+		super.sort(order)
+	}
 }
 
 // you don't have to worry about this code. this is for testing.

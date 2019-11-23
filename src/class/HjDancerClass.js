@@ -21,6 +21,15 @@ class HjDancerClass extends TwinkleDancerClass {
 			this.count2 = this.count2 - 1;
 		}
 	}
+
+	arrPush() {
+		super.arrPush()
+	}
+
+	sort(order) {
+		super.sort(order)
+	}
+	/*
 	//정렬메소드3
 	sort() {
 		let target = document.querySelectorAll('span');
@@ -29,7 +38,7 @@ class HjDancerClass extends TwinkleDancerClass {
 				this.sortArr.push(target[i]);
 			}
 		}
-	}
+	} */
 }
 
 //HJ가

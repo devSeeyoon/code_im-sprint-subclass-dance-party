@@ -1,28 +1,6 @@
 /* eslint-disable */
 const dancers = [];
 
-// 각 클래스마다 정렬 함수담는 함수를 만든다
-function arrSort() {
-	let d = new DancerClass();
-	let t = new TwinkleDancerClass();
-	let h = new HjDancerClass();
-
-	// d.sort();
-	// t.sort();
-	// h.sort();
-
-	//배열에 el는 하나의 HTML문장이므로 div.arr에 appendChild만 해주자
-	for (let i = 0; i < d.sortArr; i++) {
-		document.querySelector('.arr').appendChild(d.sortArr[i]);
-	}
-	for (let i = 0; i < t.sortArr; i++) {
-		document.querySelector('.arr').appendChild(t.sortArr[i]);
-	}
-	for (let i = 0; i < h.sortArr; i++) {
-		document.querySelector('.arr').appendChild(h.sortArr[i]);
-	}
-}
-
 function handleClickDancerButton() {
 	/* makeBlinkyDancer is the dancer maker functions available in global scope.
 	 * A new object of the given type will be created and added
@@ -61,8 +39,6 @@ function handleClickDancerButton3() {
 	for (let i = 0; i < document.getElementsByClassName('Hj').length; i++) {
 		document.getElementsByClassName('Hj')[i].innerHTML = `<i class="fas fa-walking"></i>`;
 	}
-
-	// document.getElementsByClassName('Hj').innerHTML = ``;
 }
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -78,9 +54,4 @@ window.addEventListener('DOMContentLoaded', () => {
 window.addEventListener('DOMContentLoaded', () => {
 	const elAddDancerButton = document.querySelector('.addDancerButtonTwinkle');
 	elAddDancerButton.addEventListener('click', handleClickDancerButtonTwinkle);
-});
-
-window.addEventListener('DOMContentLoaded', () => {
-	const elAddDancerButton = document.querySelector('.sortArr');
-	elAddDancerButton.addEventListener('click', arrSort);
 });
