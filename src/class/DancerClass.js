@@ -45,7 +45,7 @@ class DancerClass {
 		target.onclick = function() {
 			Object.assign(target.style, {
 				top: `${600 + (Math.random() + 0.5) * 100}px`,
-				left: `${120 +(Math.random() + 1.5) * 100}px`,
+				left: `${30 + (Math.random() + 1) * 200}px`,
 			});
 		};
 	}
