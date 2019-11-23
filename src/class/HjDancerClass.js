@@ -7,12 +7,16 @@ class HjDancerClass extends TwinkleDancerClass {
 	// 슈퍼로 받는다
 	constructor(top, left, timeBetweenSteps) {
 		super(top, left, timeBetweenSteps);
+		this.icon();
 	}
 
 	// 메소드를 재정의
 	step() {
 		//step의 메소드를 물려받았지..
 		super.step();
+		this.$node.style.borderRadius = "50px";
+		this.$node.style.animation = "changeSize 3s linear infinite";
+		this.$node.style.borderWidth = "10px";
 	}
 
 	arrPush() {
@@ -21,6 +25,10 @@ class HjDancerClass extends TwinkleDancerClass {
 
 	sort(order) {
 		super.sort(order);
+	}
+
+	icon() {
+		this.$node.innerHTML = `<i class="fas fa-walking fa-3x"></i>`;
 	}
 	/*
 	//정렬메소드3

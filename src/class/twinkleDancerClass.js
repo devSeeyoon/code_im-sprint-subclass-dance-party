@@ -10,13 +10,16 @@ class TwinkleDancerClass extends DancerClass {
 
 	step() {
 		super.step();
+		this.$node.style.animation = 'spin 1.5s linear infinite';
 		let color = this.arr[this.count];
-		this.$node.style.border = `10px solid ${color}`; // 이렇게 스타일에 border를 직접 건드리면되더라구요!
+		this.$node.style.border = `20px solid ${color}`; // 이렇게 스타일에 border를 직접 건드리면되더라구요!
+		this.$node.style.borderRadius = "0px";
 		//this.$node.className = `twinkle${color}`;
 		this.count = this.count + 1;
 		if (this.count === 7) {
 			this.count = 0;
 		}
+		
 	}
 	gone() {
 		super.gone();

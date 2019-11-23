@@ -43,7 +43,6 @@ class DancerClass {
 	gone() {
 		let target = this.$node;
 		target.onclick = function() {
-			target.style.animation = 'bigger 1s linear 1 forwards';
 			Object.assign(target.style, {
 				top: `${(Math.random() + 0.5) * 100}px`,
 				left: `${(Math.random() + 0.5) * 100}px`,

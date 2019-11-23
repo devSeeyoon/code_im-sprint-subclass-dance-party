@@ -36,6 +36,28 @@ a:active {
 		transform: none;
 	}
 	to {
-		transform: scale(4);
+		transform: scale(2.5);
 	}
 }
+
+@keyframes spin {
+	from {
+	  transform: none;
+	}
+	to {
+	  transform: rotateZ(1turn);
+	}
+}
+
+@keyframes changeSize {
+	0% {
+      transform: none;
+	}
+	50% {
+		transform: scale(2)
+	}
+	100% {
+		transform: none;
+	}
+}
+

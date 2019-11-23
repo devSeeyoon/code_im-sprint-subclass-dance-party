@@ -67,10 +67,11 @@ function handleClickDancerButton3() {
 	);
 
 	document.body.appendChild(HjDancer.$node);
+	/*
 	for (let i = 0; i < document.getElementsByClassName('dancer').length; i++) {
-		document.getElementsByClassName('dancer')[i].innerHTML = `<i class="fas fa-walking"></i>`;
+		document.getElementsByClassName('dancer')[i].innerHTML = `<i class="fas fa-walking fa-3x"></i>`;
 	}
-
+    */
 	// document.getElementsByClassName('Hj').innerHTML = ``;
 }
 
