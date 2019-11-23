@@ -1,6 +1,15 @@
 /* eslint-disable */
 const dancers = [];
 
+const arr = []; // 전역에 빈 arr 선언
+
+function arrSort() {
+	// 각 클래스에 빈 arr로 자기 자신을 집어 넣는 메쏘드와 sort 메쏘드(이건 위치를 다시 지정) 2개가 구현되어있습니다(상속으로 댄서를 봐주세요)
+	for (let i = 0; i < arr.length; i = i + 1) {
+		arr[i].sort(i + 1); // 어레이에서 순서대로 자기 자신의 메쏘드를 실행! -> 좌우로 정렬에 클릭 메쏘드로 달아서 클릭하면 싫행됩니다
+	}
+}
+/*
 // 각 클래스마다 정렬 함수담는 함수를 만든다
 function arrSort() {
 	let d = new DancerClass();
@@ -22,7 +31,7 @@ function arrSort() {
 		document.querySelector('.arr').appendChild(h.sortArr[i]);
 	}
 }
-
+*/
 function handleClickDancerButton() {
 	/* makeBlinkyDancer is the dancer maker functions available in global scope.
 	 * A new object of the given type will be created and added
@@ -58,8 +67,8 @@ function handleClickDancerButton3() {
 	);
 
 	document.body.appendChild(HjDancer.$node);
-	for (let i = 0; i < document.getElementsByClassName('Hj').length; i++) {
-		document.getElementsByClassName('Hj')[i].innerHTML = `<i class="fas fa-walking"></i>`;
+	for (let i = 0; i < document.getElementsByClassName('dancer').length; i++) {
+		document.getElementsByClassName('dancer')[i].innerHTML = `<i class="fas fa-walking"></i>`;
 	}
 
 	// document.getElementsByClassName('Hj').innerHTML = ``;

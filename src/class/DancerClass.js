@@ -54,16 +54,17 @@ class DancerClass {
 	// 정렬을 합시다
 
 	arrPush() {
-      // eslint-disable-next-line no-undef
-      arr.push(this)  // 자기 자신을 전역의 arr 추가, 즉시실행도 시켜놓음 , 즉 만들어지는순간 추가됨
+		// eslint-disable-next-line no-undef
+		arr.push(this); // 자기 자신을 전역의 arr 추가, 즉시실행도 시켜놓음 , 즉 만들어지는순간 추가됨
 	}
- 
-	sort(order) {  // 좌우로 정렬을 누르면 이 메소드가 실행되게 되어있습니다! 이 메소드는 자기 자신의 위치를 다시 재조정하는데 left를 배열의 인덱스 가지고 잡게 되어있습니다
+
+	sort(order) {
+		// 좌우로 정렬을 누르면 이 메소드가 실행되게 되어있습니다! 이 메소드는 자기 자신의 위치를 다시 재조정하는데 left를 배열의 인덱스 가지고 잡게 되어있습니다
 		let target = this.$node;
 		Object.assign(target.style, {
 			top: `300px`,
-			left: `${order *50}px`
-		})
+			left: `${order * 50}px`,
+		});
 	}
 	/*
 	sort() {

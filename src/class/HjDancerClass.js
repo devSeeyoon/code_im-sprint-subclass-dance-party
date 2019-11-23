@@ -13,21 +13,14 @@ class HjDancerClass extends TwinkleDancerClass {
 	step() {
 		//step의 메소드를 물려받았지..
 		super.step();
-		if (this.count2 === 0) {
-			this.$node.className = `${this.$node.className} Hj ${this.switArr[this.count2]}`;
-			this.count2 = this.count2 + 1;
-		} else if (this.count2 === 1) {
-			this.$node.className = `${this.$node.className} Hj ${this.switArr[this.count2]}`;
-			this.count2 = this.count2 - 1;
-		}
 	}
 
 	arrPush() {
-		super.arrPush()
+		super.arrPush();
 	}
 
 	sort(order) {
-		super.sort(order)
+		super.sort(order);
 	}
 	/*
 	//정렬메소드3
