@@ -44,7 +44,7 @@ class DancerClass {
 		let target = this.$node;
 		target.onclick = function() {
 			Object.assign(target.style, {
-				top: `${(Math.random() + 0.5) * 100}px`,
+				top: `${600 + (Math.random() + 0.5) * 100}px`,
 				left: `${(Math.random() + 0.5) * 100}px`,
 			});
 		};

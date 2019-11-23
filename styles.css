@@ -68,22 +68,21 @@ a:hover {
 
 @keyframes spin {
 	from {
-	  transform: none;
+		transform: none;
 	}
 	to {
-	  transform: rotateZ(1turn);
+		transform: rotateZ(1turn);
 	}
 }
 
 @keyframes changeSize {
 	0% {
-      transform: none;
+		transform: none;
 	}
 	50% {
-		transform: scale(2)
+		transform: scale(2);
 	}
 	100% {
 		transform: none;
 	}
 }
-
