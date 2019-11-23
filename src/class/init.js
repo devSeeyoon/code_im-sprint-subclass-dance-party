@@ -76,18 +76,18 @@ function handleClickDancerButton3() {
 }
 
 window.addEventListener('DOMContentLoaded', () => {
-	const elAddDancerButton = document.querySelector('.addDancerButton');
-	elAddDancerButton.addEventListener('click', handleClickDancerButton);
+	const elAddDancerButton = document.getElementsByClassName('addDancerButton');
+	elAddDancerButton[0].addEventListener('click', handleClickDancerButton);
 });
 
 window.addEventListener('DOMContentLoaded', () => {
-	const elAddDancerButton = document.querySelector('#HjDancer');
-	elAddDancerButton.addEventListener('click', handleClickDancerButton3);
+	const elAddDancerButton = document.getElementsByClassName('addDancerButton');
+	elAddDancerButton[2].addEventListener('click', handleClickDancerButton3);
 });
 
 window.addEventListener('DOMContentLoaded', () => {
-	const elAddDancerButton = document.querySelector('.addDancerButtonTwinkle');
-	elAddDancerButton.addEventListener('click', handleClickDancerButtonTwinkle);
+	const elAddDancerButton = document.getElementsByClassName('addDancerButton');
+	elAddDancerButton[1].addEventListener('click', handleClickDancerButtonTwinkle);
 });
 
 window.addEventListener('DOMContentLoaded', () => {
